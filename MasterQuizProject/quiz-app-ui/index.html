@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster</title>
+    <link rel="stylesheet" href="style.css"> <!-- main css link-->
+</head>
+<body>
+
+     <!--Landing Page-->
+    <section class="landing-page"> <!-- i.e 1st pages -->
+
+        <div class="wrapper">
+            <div class="flex-content">
+                <h1 class="vacation-heading">Welcome To QuizCraft</h1>
+                <a href="#quiz-packages" class="btn">Start Now</a> <!-- [36]-->
+            </div>
+        </div>
+
+    </section>
+
+    <!--header section-->
+    <header class="quiz-header" id="quiz-header">
+        <h1 class="heading">MasterMind QuizHub!</h1>
+    </header>
+
+    <nav class="main-nav"><!-- navigation bar that will stick on top of application-->
+        <a href="#">Home</a>
+        <a href="#quiz-packages">Quiz</a>    <!-- [36] -->
+        <a href="#Performer">Top Performers</a>   <!--[76]-->
+        <a href="#notes">Notes</a>               <!-- [91]-->
+    </nav>
+
+
+    <section style="background-color: rgba(156, 85, 40, 0.704);" class="quiz-packages-section" id="quiz-packages">  <!-- Second page -->
+        <h1 class="quiz-heading">Coding Quiz</h1>
+        <p class="quiz-text" style="color: white;">"Coding quizzes are more than just tests—they're opportunities to grow. 💻 Every challenge you solve sharpens your logic, improves problem-solving skills, and builds confidence in your programming journey. 🚀 Whether you ace it or stumble, you learn something valuable along the way. They fuel creativity, push your limits, and encourage thinking beyond the basics. Each question is a step closer to mastery, helping you break down complex problems into simple solutions. 🌟 So, keep practicing, stay curious, and embrace every challenge. The real win is in learning! #CodeQuiz #KeepCoding #ProgrammingJourney".</p>
+        <div class="package-wrapper">
+            <div class="package-card">
+                <img src=".//images/java.jpg" alt="">
+                <p class="card-heading">Java</p>
+                <p class="card-text"><b style="color: rgb(106, 31, 21);">Java</b>:"Write once, run anywhere, Java powers reliable, scalable applications."
+                </p>
+                <p class="card-heading">499₹</p>
+                <button class="btn" onclick="startQuiz('java')">Take Quiz</button>   <!-- JavaScripts funtion i.e onclick method calling-->
+            </div>
+            <div class="package-card">
+                <img src=".//images/python.jpg" alt="">
+                <p class="card-heading">Python</p>
+                <p class="card-text"><b style="color: rgb(17, 8, 103);">Python</b>:"Simple yet powerful,Python drives data, AI, and web development."
+                </p>
+                <p class="card-heading">999₹</p>
+                <button class="btn" onclick="startQuiz('python')">Take Quiz</button>   <!-- JavaScripts funtion i.e onclick method calling-->
+                <!-- <button class="btn">Take Quiz</button> -->
+            </div>
+            <div class="package-card">
+                <img src=".//images/js.png" alt="">
+                <p class="card-heading"> JavaScript</p>
+                <p class="card-text">JavaScript:"Interactive and dynamic,JavaScript shapes the web experience."</p>
+                <p class="card-heading">599₹</p>
+                <button class="btn">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src=".//images/net.png" alt="">
+                <p class="card-heading">.Net</p>
+                <p class="card-text"><b style="color: rgb(130, 76, 185);">.NET</b>:"Build seamlessly,.NET empowers cross-platform apps with robust performance."
+                </p>
+                <p class="card-heading">699₹</p>
+                <!-- <button class="btn">Take Quiz</button> -->
+                <button class="btn" onclick="startQuiz('.Net')">Take Quiz</button>   <!-- JavaScripts funtion i.e onclick method calling-->
+                <!-- <button class="btn">Take Quiz</button> -->
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="Performer-quiz-section" id="Performer"> <!-- Structure of top performers-->  <!-- 3rd page-->
+        <h1 class="quiz-heading" >Our Performance Champion</h1>
+        <p class="quiz-text">Our top performers are the brightest minds who have consistently excelled in our quizzes, showcasing their expertise and dedication. They represent the pinnacle of knowledge across various subjects like Java, Python, and more. With impressive scores, they set the benchmark for others to follow and inspire the entire community to strive for <b>excellence</b></p>
+        <div class="image-card">
+            <a href="https://www.linkedin.com/in/uttpal-kant-6770a3281/" target="_blank" rel="noopener noreferrer">
+            <img src=".//images/m1.jpg" alt="Uttpal"></a>
+            <img src=".//images/m2.jpg" alt="Piyush">
+            <!-- <a href="https://www.linkedin.com/in/moh-faizan-505319229/">faizan -->
+                <a href="https://www.linkedin.com/in/moh-faizan-505319229/" target="_blank" rel="noopener noreferrer">
+            <img src=".//images/m3.jpg" alt="faizan"></a>
+            <img src=".//images/m4.jpg" alt="tiwari">
+            <img src=".//images/m5.jpg" alt="Vaibhav">
+            <img src=".//images/m6.jpg" alt="Chandu">
+        </div>
+        
+    </section>
+
+
+    <section style="background-color:green;"  class="notes-section" id="notes"><!-- 4rth page--> <!-- notes structure-->
+        <h1 class="quiz-heading">Subject notes</h1>
+        <p class="quiz-text" style="color: white;" ><b style="color: rgb(75, 75, 132) ">Java </b>is an object-oriented, platform-independent language known for strong typing and wide use in enterprise applications. <b style="color: rgb(207, 207, 21) ">JavaScript </b>, on the other hand, is a loosely-typed, client-side scripting language used for web interactivity, supporting asynchronous operations. <b style="color: rgb(165, 48, 192) ">.NET </b>, a Microsoft framework, enables multi-language development with features like the Common Language Runtime (CLR) for managed code execution. <b style="color: rgb(8, 8, 47) ">Python </b> is a high-level, versatile language popular in fields like web development, data science, and AI due to its simplicity. Spring is a lightweight Java framework that simplifies enterprise app development with tools like dependency injection. <b style="color: rgb(110, 161, 34) ">Compiler </b>translate source code into machine or intermediate code while detecting syntax errors..</p>
+            <div class="notes-div">
+                <div class="notes-wrapper">
+                    <a href="CORE_JAVA_INTERVIEW_QUESTIONS.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="./images/java.jpg" alt="Java Notes">
+                    </a>
+                </div>
+            </div>
+            <div class="notes-wrapper">
+                <img src=".//images/compiler.png" alt="">
+            </div>
+            <div class="notes-wrapper">
+                <a href="Spring_ Boot.pdf" target="_blank" rel="noopener noreferrer">
+                <img src=".//images/spring.png" alt="Spring boot note">
+            </a>
+            </div>
+            <div class="notes-wrapper">
+                <img src=".//images/react.png" alt="">
+            </div>
+            <div class="notes-wrapper">
+                <img src=".//images/dev.jpg" alt="">
+            </div>
+            <div class="notes-wrapper">
+                <img src=".//images/python.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <footer class="footer-section" style="background-color: azure;"> <!-- button @copyright that contains my youTue channel too-->
+        <small>All Right Reserver</small>
+        <small>Developed  & Maintained By
+            <a href=https://youtube.com/@codewithcoffee-a2z?si=kYCcT1zhbkv3XfFG target="_blank">Uttpal Kant</a>
+        </small>
+    </footer>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
